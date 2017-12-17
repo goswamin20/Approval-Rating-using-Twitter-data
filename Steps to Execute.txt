@@ -1,0 +1,31 @@
+PreRequisites:
+-> Pandas
+-> NLTK 
+-> sentinet
+-> affin
+-> MySql
+
+We have 3 executable files namely:
+-> TwitterData.py
+-> Score.py
+-> ApprovalRating.py 
+
+We have two datasets namely:
+->tweetdataset.csv
+->result.csv
+
+Steps for running the program:
+-> In test database run the queries:
+	Create Database test;
+	CREATE TABLE test.tweetdataset(userid int(100),statusid int(100),statustime date,tweet varchar(1000));
+-> Run TwitterData.py
+-> Export the tweetdataset table into tweetdataset.csv
+-> Run Score.py
+-> Import result.csv to test database
+-> Run ApprovalRating.py
+
+Alternative Steps for running the program:
+Also, the folder contains sql dump file named twitterdata_result.sql that could be directly imported and run ApprovalRating.py.
+
+
+	
